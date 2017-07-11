@@ -1,3 +1,3 @@
 # xr-template-root
 
-root
+xr-template-root

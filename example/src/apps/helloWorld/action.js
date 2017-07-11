@@ -12,10 +12,6 @@ class action {
         this.injections = injections
         injections.reduce('init')
     }
-
-    onRedirect = ({appName, appProps}) =>{
-        this.injections.reduce('redirect', appName, appProps)
-    }
 }
 
 export default function creator(option) {

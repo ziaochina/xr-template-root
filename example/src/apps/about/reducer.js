@@ -8,14 +8,8 @@ class reducer {
     }
 
     init = (state, option) => {
-        const data = { data: {currentAppName:config.getCurrent().defaultAppName} }
+        const data = { data: {} }
         return this.metaReducer.init(state, data)
-    }
-
-    redirect = (state, appName, appProps) =>{
-        state = this.metaReducer.sf(state, 'data.currentAppName', appName)
-        state = this.metaReducer.sf(state, 'data.currentAppProps', appProps)
-        return state
     }
 }
 

@@ -23,14 +23,14 @@ plugins.push(new webpack.optimize.CommonsChunkPlugin('vendor'))
 
 plugins.push(new HtmlWebpackPlugin({
     filename: './index.html', //生成的html存放路径，相对于 path
-    template: './website/index.html', //html模板路径
+    template: './index.html', //html模板路径
     inject: true, //允许插件修改哪些内容，包括head与body`
 }))
 
 module.exports = {
     devtool: 'source-map',
     entry:{
-        bundle: ["./website/index.js"],
+        bundle: ["./index.js"],
         vendor: ["react", 'react-dom', 'xr-meta-engine']
     } ,
 
@@ -56,7 +56,6 @@ module.exports = {
             }]
         }, {
             test: /\.less$/,
-            // exclude: /node_modules/,
             use: [{
                 loader: 'style-loader'
             }, {
@@ -70,7 +69,6 @@ module.exports = {
             use: 'babel-loader'
         }, {
             test: /\.(eot|woff|woff2|ttf|svg|png|jpe?g|gif|mp4|webm)(\?\S*)?$/,
-            //exclude: /node_modules/,
             use: {
                 loader: 'file-loader',
                 options: {
