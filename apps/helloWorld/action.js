@@ -12,6 +12,14 @@ class action {
         this.injections = injections
         injections.reduce('init')
     }
+
+    handleAboutClick = () =>{
+        this.component.props.onRedirect({appName:'about', appParams:{}})
+    }
+
+    handleHelloClick = () =>{
+        this.component.props.onRedirect({appName:'helloWorld', appParams:{}})   
+    }
 }
 
 export default function creator(option) {
