@@ -1,6 +1,6 @@
 {
   "name": "xr-template-root",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "xr-template-root",
   "main": "index.js",
   "scripts": {

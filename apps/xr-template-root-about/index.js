@@ -2,15 +2,15 @@ import config from './config'
 import * as api from './api'
 
 export default {
-	name: "helloWorld",
+	name: "xr-template-root-about",
 	version:"1.0.0",
-	description:"helloWorld",
+	description:"about",
 	meta : api.getMeta(),
 	components:[],
 	config:config,
 	load: (cb) => {
 		require.ensure([], require => {
 			cb(require('./component'), require('./action'), require('./reducer'))
-		}, "helloWorld")
+		}, "about")
 	}
 }
