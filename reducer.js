@@ -8,7 +8,13 @@ class reducer {
     }
 
     init = (state, option) => {
-        const data = { data: {currentAppName:config.getCurrent().defaultAppName} }
+        const cfg = config.getCurrent()
+        const data = { 
+            data: {
+                currentAppName:cfg.defaultAppName,
+                currentAppParams:cfg.defaultAppParams
+            } 
+        }
         return this.metaReducer.init(state, data)
     }
 

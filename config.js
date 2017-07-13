@@ -1,4 +1,7 @@
-var _options = {}
+var _options = {
+	defaultAppName : 'xr-template-root-about',
+	defaultAppParams: {}
+}
 
 function config(options) {
 	if(options){

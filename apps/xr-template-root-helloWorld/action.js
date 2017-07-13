@@ -14,11 +14,11 @@ class action {
     }
 
     handleAboutClick = () =>{
-        this.component.props.onRedirect({appName:'about', appParams:{}})
+        this.component.props.onRedirect({appName:'xr-template-root-about', appParams:{}})
     }
 
     handleHelloClick = () =>{
-        this.component.props.onRedirect({appName:'helloWorld', appParams:{}})   
+        this.component.props.onRedirect({appName:'xr-template-root-helloWorld', appParams:{}})   
     }
 }
 
